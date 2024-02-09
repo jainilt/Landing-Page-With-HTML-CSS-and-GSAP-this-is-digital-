@@ -6,7 +6,7 @@
 html,body{
     height: 100%;
     width: 100%;
-    font-family: cooper;
+    font-family: cooper,ui-serif,Georgia,Cambria,Times New Roman,Times,serif;
 }
 #main{
     height: 100%;
