@@ -16,6 +16,7 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 #nav{
     height: 100px;
@@ -25,10 +26,10 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: space-between; 
-    padding: 0 40px;
+    padding: 0 5vw; /* Adjusted for responsiveness */
 }
 #nav>h1{
-    font-size: 31px;
+    font-size: 2.5vw; /* Adjusted for responsiveness */
     font-weight: 100;
 }
 #nav #part2{
@@ -86,22 +87,22 @@ html,body{
     background-size: cover;
 }
 #main #img1{
-    height: 516px;
-    width: 358px;
+    height: 35vw; /* Adjusted for responsiveness */
+    width: 24vw; /* Adjusted for responsiveness */
     position: absolute;
     left: 8%;
     top: 19%;
 }
 #main #img2{
-    height: 215px;
-    width: 256px;
+    height: 15vw; /* Adjusted for responsiveness */
+    width: 18vw; /* Adjusted for responsiveness */
     position: absolute;
     right: 23%;
     top: 18%;
 }
 #main #img3{
-    height: 276.5px;
-    width: 276.5px;
+    height: 20vw; /* Adjusted for responsiveness */
+    width: 20vw; /* Adjusted for responsiveness */
     position: absolute;
     left: 72%;
     top: 51%;
@@ -115,3 +116,16 @@ html,body{
 #main img:hover{
     margin-top: -10px;
 }
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    #nav > h1 {
+        font-size: 5vw; /* Adjusted for smaller screens */
+    }
+    #main > h1 {
+        font-size: 7vw; /* Adjusted for smaller screens */
+    }
+    /* Adjust other styles as needed */
+}
+
+/* Add more media queries for other screen sizes if necessary */
